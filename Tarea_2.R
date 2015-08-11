@@ -61,7 +61,7 @@ length(V(graph_conComp)[value  == (clusters-2) ])
 #6--------------------------------------------------------
 #Blogs mas importantes
 btw <- betweenness(graph_conComp)
-maximo <- sort(btw,decreasing = TRUE)[20]
+maximo <- sort(btw,decreasing = TRUE)[15]
 
 importantes <- V(graph_conComp)[which(maximo<betweenness(graph_conComp))]
 importantes$label
